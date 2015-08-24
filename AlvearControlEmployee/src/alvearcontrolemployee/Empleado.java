@@ -7,7 +7,7 @@ public class Empleado {
     private String nombre;
     private String apellido;
     private List <Ocurrencia> ocurrencias;
-    public Empleado(String Nombre, String Apellido){
+    public Empleado(String nombre, String apellido){
         this.nombre = nombre;
         this.apellido = apellido;
     }
