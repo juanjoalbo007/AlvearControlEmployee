@@ -14,20 +14,30 @@ import java.util.Date;
  */
 public class Ocurrencia {
 
-    private Date fechaYHora;
+    private Calendar fechaYHora;
     
     public Ocurrencia()
     {
-        this.fechaYHora = Calendar.getInstance().getTime();
+        this.fechaYHora = Calendar.getInstance();
     }
     
-    public Date getFechaYHora() 
+    public Calendar getFechaYHora() 
     {
         return fechaYHora;
     }
 
-    public void setFechaYHora(Date fechaYHora)
+    public void setFechaYHora(Calendar fechaYHora)
     {
         this.fechaYHora = fechaYHora;
+    }
+    
+    public static boolean sonIgualesPorFecha(Ocurrencia o1, Ocurrencia o2)
+    {
+        if(o1.getFechaYHora().get(Calendar.YEAR) == o2.getFechaYHora().get(Calendar.YEAR ) &&
+           o1.getFechaYHora().get(Calendar.DAY_OF_YEAR) == o2.getFechaYHora().get(Calendar.DAY_OF_YEAR ) )
+        {
+            return true;
+        }
+        else return false;
     }
 }
