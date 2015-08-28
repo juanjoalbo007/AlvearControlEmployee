@@ -16,7 +16,7 @@ public class AlvearControlEmployee {
     /**
      * @param args the command line arguments
      */
-    public static void main(String[] args) {
+    public static void main(String[] args) {    
         //System.out.println("Seb");
         Empleado e1 = new Empleado("Juan","Perez");
         Empleado e2 = new Empleado("Maria","Juarez");
@@ -34,6 +34,8 @@ public class AlvearControlEmployee {
         System.out.println("comparación fechas1 y 2: "+o2.getFechaYHora().compareTo(o1.getFechaYHora()));
         
         System.out.println("Get sólo año: "+fecha.get(Calendar.YEAR));
+        //seba
+        
         
     }
     
