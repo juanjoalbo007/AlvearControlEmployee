@@ -30,6 +30,7 @@ public class AlvearControlEmployee {
         Calendar fecha = Calendar.getInstance();
         fecha.add(Calendar.HOUR_OF_DAY,-5);
         o2.setFechaYHora( fecha.getTime());
+        //Soy seb
         System.out.println("Occurrencia2: "+o2.getFechaYHora());
         System.out.println("comparación fechas1 y 2: "+o2.getFechaYHora().compareTo(o1.getFechaYHora()));
         
