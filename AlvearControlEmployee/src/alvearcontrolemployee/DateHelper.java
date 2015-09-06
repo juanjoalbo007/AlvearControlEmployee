@@ -15,6 +15,8 @@ import java.util.Date;
  * @author Juanjo
  */
 public class DateHelper {
+    
+    
     public static Date toDate(String fecha){
         SimpleDateFormat formatter = new SimpleDateFormat("dd/MM/yyyy");
         Date date = Calendar.getInstance().getTime();

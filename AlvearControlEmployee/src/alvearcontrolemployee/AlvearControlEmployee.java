@@ -25,16 +25,24 @@ public class AlvearControlEmployee {
         
         Ocurrencia o1 = new Ocurrencia();
         Ocurrencia o2 = new Ocurrencia();
-        System.out.println("Occurrencia1: "+o1.getFechaYHora());
-        System.out.println("Occurrencia2: "+o2.getFechaYHora());
+        System.out.println("Occurrencia1: " + o1.getFechayHoraDate());
+        System.out.println("Occurrencia2: " + o2.getFechayHoraDate());
         Calendar fecha = Calendar.getInstance();
-        fecha.add(Calendar.HOUR_OF_DAY,-5);
-        o2.setFechaYHora( fecha.getTime());
-        //Soy seb
-        System.out.println("Occurrencia2: "+o2.getFechaYHora());
-        System.out.println("comparación fechas1 y 2: "+o2.getFechaYHora().compareTo(o1.getFechaYHora()));
+        e1.getEntradas().add(o1);
+        fecha.add(Calendar.HOUR_OF_DAY,2);
+        o2.setFechaYHora(fecha);
+        e1.getSalidas().add(o2);
+        System.out.println("Occurrencia1: " + o1.getFechaYHora().getTime());
+        System.out.println("Occurrencia2: " + o2.getFechaYHora().getTime());
+        //System.out.println("comparación fechas1 y 2: "+o2.getFechaYHora().compareTo(o1.getFechaYHora()));
         
-        System.out.println("Get sólo año: "+fecha.get(Calendar.YEAR));
+        Ocurrencia entrada = e1.getEntrada("05/09/2015");
+        e1.mostrarOcurrencia(entrada);
+        Ocurrencia salida = e1.getSalida("05/09/2015");
+        e1.mostrarOcurrencia(salida);
+        
+                
+//System.out.println("Get sólo año: "+fecha.get(Calendar.YEAR));
         //seba
         
         

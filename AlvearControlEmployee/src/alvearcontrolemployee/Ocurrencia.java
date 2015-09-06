@@ -25,6 +25,19 @@ public class Ocurrencia {
     {
         return fechaYHora;
     }
+    
+    public Date getFechayHoraDate(){
+        return fechaYHora.getTime();
+    }
+    
+    public Date getFechayHoraString(){
+        return fechaYHora.getTime();
+    }
+    
+    public String toString (){
+        return this.fechaYHora.toString();
+        
+    }
 
     public void setFechaYHora(Calendar fechaYHora)
     {
